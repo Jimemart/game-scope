@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SliderCmp, Relevant } from '../../components'
+import { SliderCmp, Relevant, GameWorld } from '../../components'
 import { connect } from 'react-redux'
 import * as actions from '../../store/games/actions'
 
@@ -15,6 +15,7 @@ export class HomeContainer extends Component {
       <div>
         <SliderCmp slides={this.props.latest}/>
         <Relevant relevant={this.props.relevant}/>
+        <GameWorld></GameWorld>
       </div>
     )
   }
@@ -22,8 +23,8 @@ export class HomeContainer extends Component {
 
 const mapStateToProps = state => {
   return {
-    latest: state.latest,
-    relevant: state.relevant
+    latest: state.gamesReducer.latest,
+    relevant: state.gamesReducer.relevant
   }
 }
 

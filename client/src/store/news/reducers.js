@@ -1,22 +1,16 @@
 import * as constants from './constants'
 
 const initialState = {
-  latest: null,
-  relevant: null
+  news: null
 }
 
 export const reducer = (state = initialState, action) => {
-  switch(action.type) {
-    case constants.SET_LATEST:
+  switch (action.type) {
+    case constants.SET_NEWS:
       return {
         ...state,
-        latest: action.latest
+        news: action.news
       }
-    case constants.SET_RELEVANT:
-     return {
-       ...state,
-       relevant: action.relevant
-     }
     default:
       return state
   }

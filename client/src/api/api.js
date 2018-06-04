@@ -22,4 +22,8 @@ export const games = {
   relevant: () => get('relevant')
 }
 
+export const news = {
+  category: (type) => get(`news/${type}`)
+}
+
 export default apiGame

@@ -10,7 +10,7 @@ const Relevant = (props) => {
   let sections
 
   if(props.relevant) {
-    sections = props.relevant.map(elem => <Single game={elem}/>)
+    sections = props.relevant.map((elem, i) => <Single key={i} game={elem}/>)
   }
 
   return (
