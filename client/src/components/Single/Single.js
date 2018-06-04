@@ -21,9 +21,9 @@ const Price = styled.div`
   text-align: center;
 `
 const Holder = styled.div`
-margin: 10px 20px;
-position: relative;
-top: 90px;
+  margin: 10px 20px;
+  position: relative;
+  top: -75px;
 `
 
 const H3 = styled.h3`
@@ -34,7 +34,6 @@ const Shadow = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  top: -75px;
   background: linear-gradient(to bottom, rgba(0,0,0,0.01) 0%,rgba(0,0,0,1) 100%);
 `
 const Single = (props) => {
