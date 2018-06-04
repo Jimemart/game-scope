@@ -1,0 +1,6 @@
+export { SliderCmp } from './Slider'
+export { Slide } from './Slide'
+export { Description } from './Description'
+export { Rating } from './Rating'
+export { Relevant } from './Relevant'
+export { Single } from './Single'

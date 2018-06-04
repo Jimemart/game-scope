@@ -1,0 +1,9 @@
+.slick-dots {
+  position: relative;
+  top: -50px;
+  color: white;
+}
+
+.slick-dots li.slick-active button:before, .slick-dots li button:before {
+  color: white;
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "img": "https://images3.alphacoders.com/715/thumb-1920-715968.jpg",
+    "name": "Hitman",
+    "price": "40€"
+  },
+  {
+    "img": "https://www.ps4wallpapers.com/wp-content/uploads/2017/06/PS4Wallpapers.com_Monster_Hunter_World_3840x2160.jpg",
+    "name": "Monster Hunter",
+    "price": "60€"
+  },
+  {
+    "img": "https://i0.wp.com/cromossomonerd.com.br/wp-content/uploads/2018/04/img_8318.jpg?resize=1068%2C600&ssl=1",
+    "name": "Far Cry 5",
+    "price": "70€"
+
+  },
+  {
+    "img": "http://s2.n4g.com/news/2173189_0.jpg",
+    "name": "Detroit",
+    "price": "60€"
+  },
+  {
+    "img": "https://www.xtrafondos.com/wallpapers/soul-of-cinder-de-dark-souls-3-2852.jpg",
+    "name": "Darl Souls III",
+    "price": "30€"
+  }
+]
