@@ -8,8 +8,8 @@ const Flex = styled.div`
   background: #0f0f0f;
 `
 const Holder = styled.div`
-  padding: 8% 20%;
   display:flex;
+  width:60%;
   flex-direction:column;
   justify-content: center;
 

@@ -14,7 +14,8 @@ const Pill = styled.div`
 const MenuHolder = styled.div`
   display: flex;
   flex-direction: row;
-  justify: space-around;
+  justify-content: center;
+  margin-bottom: 20px;
 `
 
 const Menu = (props) => {

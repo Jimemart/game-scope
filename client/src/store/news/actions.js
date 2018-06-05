@@ -10,6 +10,6 @@ export const getNews = (str) => {
 export const setNews = (news) => {
   return {
     type: constants.SET_NEWS,
-    news
+    news: news
   }
 }

@@ -9,7 +9,7 @@ export const reducer = (state = initialState, action) => {
     case constants.SET_NEWS:
       return {
         ...state,
-        news: action.news
+        news: action.fetchedNews
       }
     default:
       return state

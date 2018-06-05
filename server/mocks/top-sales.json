@@ -1,0 +1,38 @@
+[
+  {
+    "img": "http://www.laps4.com/foro/imagehosting/206511593fc37a89bfb.jpg",
+    "name": "God of War",
+    "price": "64.95€",
+    "platform": 1,
+    "release": "20th March 2018",
+    "studio": "Santa Monica Studio",
+    "points": "650"
+  },
+  {
+    "img": "https://media.vandal.net/m/45807/fifa-18-201791623107_1.jpg",
+    "name": "Fifa 18",
+    "price": "29.95€",
+    "platform": 2,
+    "release": "29th Sept 2017",
+    "studio": "EA Sports",
+    "points": "300"
+  },
+  {
+    "img": "https://media.vandal.net/m/48289/far-cry-5-20183131312_1.jpg",
+    "name": "FarCry 5",
+    "price": "64.95€",
+    "platform": 1,
+    "release": "27th March 2018",
+    "studio": "Ubisoft",
+    "points": "700"
+  },
+  {
+    "img": "https://media.vandal.net/m/14972/the-legend-of-zelda-breath-of-the-wild-201732131319_21.jpg",
+    "name": "The Legend of Zelda",
+    "price": "59.95€",
+    "platform": 3,
+    "release": "3rd March 2017",
+    "studio": "Nintendo",
+    "points": "600"
+  }
+]
