@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Pill } from '../'
 
 const GameDescription = styled.div`
   color: white;
@@ -26,24 +27,13 @@ const FlexTags = styled.div`
   justify-content: space-around;
 `
 
-const Tag = styled.div`
-  width: 20%;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-  background: rgba(15,15,15,0.7);
-  text-align: center;
-  padding: 10px;
-  border-radius: 50px;
-`
-
 const Description = (props) => {
   const firstLetter = props.title.substring(0,1)
   const restTitle = props.title.substring(1,props.title.length)
 
   const tags = props.tags.map((elem, i) => {
     return (
-      <Tag key={i}>{elem}</Tag>
+      <Pill key={i} text={elem} width={"20%"}/>
     )
   })
 

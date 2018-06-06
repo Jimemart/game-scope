@@ -5,7 +5,7 @@
     "price": "64.95€",
     "platform": 1,
     "release": "20th March 2018",
-    "studio": "Santa Monica Studio",
+    "studio": "Santa Monica",
     "points": "650"
   },
   {
@@ -34,5 +34,41 @@
     "release": "3rd March 2017",
     "studio": "Nintendo",
     "points": "600"
+  },
+  {
+    "img": "https://vignette.wikia.nocookie.net/zelda/images/c/c8/Hyrule_Warriors_Car%C3%A1tula.jpg/revision/latest?cb=20171017022948&path-prefix=es",
+    "name": "Hyrule Warriors",
+    "price": "54.95€",
+    "platform": 3,
+    "release": "18th May 2018",
+    "studio": "Team Ninja",
+    "points": "550"
+  },
+  {
+    "img": "https://i11b.3djuegos.com/juegos/13427/crash_bandicoot_remaster__nombre_provisional_/fotos/ficha/crash_bandicoot_remaster__nombre_provisional_-3727501.jpg",
+    "name": "Crash Bandicoot",
+    "price": "39.95€",
+    "platform": 1,
+    "release": "30th June 2017",
+    "studio": "Vicarious Visions",
+    "points": "400"
+  },
+  {
+    "img": "http://cdn.shopify.com/s/files/1/2701/9572/products/Switch_Donkey_Kong_Country_Tropical_Freeze_1200x1200.png?v=1521942128",
+    "name": "Donkey Kong",
+    "price": "54.95€",
+    "platform": 3,
+    "release": "4th May 2018",
+    "studio": "Retro Studios",
+    "points": "550"
+  },
+  {
+    "img": "https://i11b.3djuegos.com/juegos/14364/assassin__039_s_creed__2017_/fotos/ficha/assassin__039_s_creed__2017_-3752541.jpg",
+    "name": "Assassins Creed Origins",
+    "price": "64.95€",
+    "platform": 2,
+    "release": "27th October 2017",
+    "studio": "Ubisoft",
+    "points": "650"
   }
 ]

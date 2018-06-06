@@ -6,15 +6,14 @@ const Flex = styled.div`
   display: flex;
   justify-content: center;
   background: #0f0f0f;
+  padding-top: 50px;
 `
 const Holder = styled.div`
   display:flex;
-  width:60%;
+  width:70%;
   flex-direction:column;
   justify-content: center;
-
 `
-
 const TitleCenter = styled.div`
   width: 50px;
   text-transform: uppercase;

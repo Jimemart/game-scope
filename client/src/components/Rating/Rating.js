@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import FontAwesome from 'react-fontawesome'
+import { Pill } from '../'
 
 const Holder = styled.div`
   border-radius: 50px;
@@ -39,36 +40,30 @@ const Price = styled.div`
   margin-left:30px;
   font-weight: light;
 `
-const BuyButton = styled.div`
-  background: #2b9b41;
-  border-radius 50px;
-  color: white;
-  text-align: center;
-  padding: 10px 20px;
-  height: 20px;
-  margin-left:40px;
-`
 const Flex = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   margin-top:10px;
 `
 const Notification = styled.div`
-  background: #f4425f;
-  font-size: 8px;
-  font-weight: bold;
-  text-align: center;
-  width: 30%;
-  padding: 3px;
-  border-radius: 20px;
   position: relative;
   right: -50px;
   bottom: -5px;
+  width:30%;
 `
 
 const Rating = (props) => {
-  const notification = props.out ? <Notification>NOW</Notification> : ''
+  const notification = props.out ?
+      <Notification>
+      <Pill
+        text={"NOW"}
+        padding={"3px"}
+        background={"#f4425f"}
+        font={"8px"}/>
+      </Notification>
+      : ''
+
   const number = Number(props.rating)
   let stars = []
   for (var i = 0; i < number; i++) {
@@ -99,9 +94,11 @@ const Rating = (props) => {
           {notification}
           60€
         </Price>
-        <BuyButton>
-          {props.out ? 'Comprar' : 'Reservar'}
-        </BuyButton>
+        <Pill
+          text={props.out ? 'Buy' : 'Book'}
+          padding={"10px 20px"}
+          width={"20%"}
+          background={"#2b9b41"}/>
       </Flex>
     </div>
   )
