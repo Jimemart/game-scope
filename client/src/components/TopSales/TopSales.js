@@ -2,13 +2,6 @@ import React from 'react'
 import styled from 'styled-components';
 import { Pill } from '../'
 
-const Flex = styled.div`
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  margin-bottom: 50px;
-  flex-wrap: wrap;
-`
 const Game = styled.div`
   width: 100%;
   height: 270px;
@@ -17,7 +10,8 @@ const Game = styled.div`
 `
 const Holder = styled.div`
   width:22%;
-  background: black;
+  cursor: pointer;
+  background: #0f0f0f;
   color:white;
   margin-bottom: 20px;
 `
@@ -81,11 +75,7 @@ const TopSales = (props) => {
       </Holder>
     )
   }) : ''
-  return (
-    <Flex>
-      {games}
-    </Flex>
-  )
+  return games
 }
 
 export default TopSales
