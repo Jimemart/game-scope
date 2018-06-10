@@ -1,10 +1,5 @@
 import React from 'react'
-import styled from 'styled-components';
-import { Single } from '../'
-const Flex = styled.div`
-  display: felx;
-  justify-content: flex-start;
-`
+import { Single, FlexContainer } from '../'
 
 const Relevant = (props) => {
   let sections
@@ -14,9 +9,9 @@ const Relevant = (props) => {
   }
 
   return (
-    <Flex>
+    <FlexContainer justify="flex-start" marginTop="0px">
       {sections}
-    </Flex>
+    </FlexContainer>
   )
 }
 

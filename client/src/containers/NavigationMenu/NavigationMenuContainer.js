@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { Menu, TopSales, News } from '../../components'
+import { Menu, TopSales, News, Analisis } from '../../components'
 import * as actions from '../../store/news/actions'
 import styled from 'styled-components';
 
@@ -12,7 +12,7 @@ const Flex = styled.div`
 `
 
 class NavigationMenu extends Component {
-  pills = ['Top sales', 'News', 'Reviews', 'Streams', 'Guides']
+  pills = ['Top sales', 'News', 'Analisis', 'Streams', 'Guides']
   state = {
     active: 'Top sales'
   }
@@ -35,8 +35,8 @@ class NavigationMenu extends Component {
       case 'News':
         body = (<News  news={this.props.news}/>)
         break;
-      case 'Reviews':
-        body = (<div>Reviews</div>)
+      case 'Analisis':
+        body = (<Analisis news={this.props.news}/>)
         break;
       case 'Streams':
         body = (<div>Streams</div>)

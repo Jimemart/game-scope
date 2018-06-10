@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-import FontAwesome from 'react-fontawesome'
-import { Pill } from '../'
+import { Pill, Icon, FlexContainer } from '../'
+
+const Zindex = styled.div`
+  z-index: 2;
+`
 
 const Holder = styled.div`
   border-radius: 50px;
@@ -30,21 +33,11 @@ const Circle = styled.div`
 const CenterArea = styled.div`
   padding: 15px 10px 10px 10px;
 `
-const FontAw = styled(FontAwesome)`
-  color: #2b9b41;
-  margin: auto 2px;
-`
 const Price = styled.div`
   color: white;
   font-size: 50px;
   margin-left:30px;
   font-weight: light;
-`
-const Flex = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top:10px;
 `
 const Notification = styled.div`
   position: relative;
@@ -68,14 +61,14 @@ const Rating = (props) => {
   let stars = []
   for (var i = 0; i < number; i++) {
     if (number - i !== 0.5) {
-      stars.push(<FontAw name='star' key={i}/>)
+      stars.push(<Icon name={'star'} key={i}/>)
     } else {
-      stars.push(<FontAw name='star-half' key={i}/>)
+      stars.push(<Icon name={'star-half'} key={i}/>)
     }
   }
 
   return (
-    <div>
+    <Zindex>
       <Holder>
         <Circle>
           {props.rating}
@@ -89,7 +82,7 @@ const Rating = (props) => {
           4.5
         </Circle>
       </Holder>
-      <Flex>
+      <FlexContainer align="center">
         <Price>
           {notification}
           60€
@@ -99,8 +92,8 @@ const Rating = (props) => {
           padding={"10px 20px"}
           width={"20%"}
           background={"#2b9b41"}/>
-      </Flex>
-    </div>
+      </FlexContainer>
+    </Zindex>
   )
 }
 

@@ -7,6 +7,7 @@ const PillStyled = styled.div`
   text-transform: uppercase;
   font-weight: bold;
   width: ${props => props.width ? props.width : '100%'};
+  float: ${props => props.float ? props.float : ''};
   text-align: center;
   color: white;
   padding: ${props => props.padding ? props.padding : '10px'};
@@ -18,6 +19,7 @@ const Pill = (props) => {
      background={props.background}
      width={props.width}
      font={props.font}
+     float={props.float}
      padding={props.padding}>
       {props.text}
     </PillStyled>

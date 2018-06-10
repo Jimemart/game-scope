@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Pill } from '../'
+import { Pill, FlexContainer } from '../'
 
 const Game = styled.div`
   width: 100%;
@@ -24,19 +24,11 @@ const Information = styled.div`
     min-height:60px;
   }
 `
-const Text = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #808080;
-`
-
 const Pa = styled.p`
   font-size: 13px;
   margin: 5px auto;
   color: ${props => props.color ? props.color : '#808080'}
 `
-
 const Price = styled.h2`
   font-weight: 400;
 `
@@ -51,7 +43,7 @@ const TopSales = (props) => {
         <Game img={elem.img}/>
         <Information>
           <h3>{elem.name}</h3>
-          <Text>
+          <FlexContainer color="#808080" align="center">
             <div>
               <Pa>Studio</Pa>
               <Pa>{elem.studio}</Pa>
@@ -60,8 +52,8 @@ const TopSales = (props) => {
               <Pa color={"#2b9b41"}>Release</Pa>
               <Pa>{elem.release}</Pa>
             </div>
-          </Text>
-          <Text>
+          </FlexContainer>
+          <FlexContainer  color="#808080" align="center">
             <div>
               <Price>{elem.price}</Price>
             </div>
@@ -70,7 +62,7 @@ const TopSales = (props) => {
                 text={'buy'}
                 background={'#2b9b41'}/>
             </Left>
-          </Text>
+          </FlexContainer>
         </Information>
       </Holder>
     )

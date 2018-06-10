@@ -11,7 +11,7 @@ const StyledTitle = styled.div`
   }
   span {
     font-size: 40px;
-    color: #2b9b41;
+    color: ${props => props.color ? props.color : '#2b9b41'};
   }
 
   span:last-child {
@@ -33,16 +33,21 @@ const StyledTitle = styled.div`
     margin: 0 auto;
   `}
 
+  ${props => props.right && css`
+    text-align: right !important;
+    width: 100% !important;
+  `}
+
 
 `
 
 const Title = (props) => {
-  const { centered, big, title} = props
+  const { centered, big, title, right, color} = props
   const arr = title.split(' ')
   const firstLetter = arr[1].substring(0,1)
   const rest = arr[1].substring(1, arr[1].length)
   return(
-    <StyledTitle big={big} centered={centered}>
+    <StyledTitle big={big} centered={centered} right={right} color={color}>
       <h1>{arr[0]}<br/><span>{firstLetter}</span><span>{rest}</span></h1>
     </StyledTitle>
   )

@@ -1,15 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components';
-import { Title } from '../'
+import { Title, HorizontalCard } from '../'
 
-const Holder = styled.div`
-  width:${props => props.width ? props.width : '22%'};
-  background: #0f0f0f;
-  height: 270px;
-  color:white;
-  cursor: pointer;
-  margin-bottom: 20px;
-`
 const Spreader = styled.div`
   display: flex;
   justify-content: ${props => props.justify ? props.justify : 'space-between'};
@@ -35,7 +27,7 @@ const News = (props) => {
   const { news } = props
   const shapedNews = news ? news.map((elem, i) => {
     return (
-      <Holder key={i} width={'47.5%'}>
+      <HorizontalCard key={i} width={'47.5%'}>
         <Spreader>
           <Title title={'game news'}/>
         </Spreader>
@@ -48,7 +40,10 @@ const News = (props) => {
             <p>{elem.body}</p>
           </div>
         </Spreader>
-      </Holder>
+        <Spreader>
+
+        </Spreader>
+      </HorizontalCard>
     )
   }) : ''
 

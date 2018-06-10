@@ -4,6 +4,7 @@ import { Pill } from '../'
 
 const GameDescription = styled.div`
   color: white;
+  z-index: 2;
   width: 27%;
   position: relative;
   top: -50px;

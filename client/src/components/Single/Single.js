@@ -1,15 +1,21 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Shadow } from '../'
 
 const Section = styled.div`
   background: url(${props => props.img});
   background-size: cover;
   width:20%;
   height:170px;
+  position:relative;
   margin: 0px;
   background-position: center;
   cursor:pointer;
   color:white;
+  box-sizing: border-box;
+  :hover {
+      border-bottom: 2px solid #2b9b41;
+    }
 `
 const Price = styled.div`
   background: #2b9b41;
@@ -22,20 +28,14 @@ const Price = styled.div`
 `
 const Holder = styled.div`
   margin: 10px 20px;
-  position: relative;
-  top: -75px;
+  position: absolute;
+  bottom: 0;
 `
 
 const H3 = styled.h3`
   margin: 3px;
 `
 
-const Shadow = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.01) 0%,rgba(0,0,0,1) 100%);
-`
 const Single = (props) => {
  return(
    <Section img={props.game.img}>
