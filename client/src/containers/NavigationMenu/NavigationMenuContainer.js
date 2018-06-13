@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { Menu, TopSales, News, Analisis } from '../../components'
+import { Menu, TopSales, News, Analisis, Streams } from '../../components'
 import * as actions from '../../store/news/actions'
 import styled from 'styled-components';
 
@@ -39,7 +39,7 @@ class NavigationMenu extends Component {
         body = (<Analisis news={this.props.news}/>)
         break;
       case 'Streams':
-        body = (<div>Streams</div>)
+        body = (<Streams news={this.props.news}/>)
         break;
       case 'Guides':
         body = (<div>Guides</div>)
