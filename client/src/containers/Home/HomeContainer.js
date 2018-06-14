@@ -15,7 +15,7 @@ export class HomeContainer extends Component {
       <div>
         <SliderCmp slides={this.props.latest}/>
         <Relevant relevant={this.props.relevant}/>
-        <GameWorld></GameWorld>
+        <GameWorld />
       </div>
     )
   }

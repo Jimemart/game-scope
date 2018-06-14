@@ -37,8 +37,8 @@ const Card = (props) => {
           <FlexContainer direction="column" height="220px" marginRight="20px">
             <H3>{props.elem.title}</H3>
             <div>
-              <Title title="game analisis" right color="blue"/>
-              <Pill background="blue" text="Check it out" width="100px" float="right"/>
+              <Title title={props.title} right color={props.color}/>
+              <Pill background={props.color} text="Check it out" width="100px" float="right"/>
             </div>
           </FlexContainer>
         </FlexContainer>
@@ -48,8 +48,8 @@ const Card = (props) => {
           <FlexContainer direction="column" height="220px" marginLeft="20px">
             <H3 reverse>{props.elem.title}</H3>
             <div>
-              <Title title="game analisis" color="blue"/>
-              <Pill background="blue" text="Check it out" width="100px"/>
+              <Title title={props.title} color={props.color}/>
+              <Pill background={props.color} text="Check it out" width="100px"/>
             </div>
           </FlexContainer>
           <Relative>

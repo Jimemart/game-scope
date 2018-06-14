@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { Menu, TopSales, News, Analisis, Streams } from '../../components'
-import * as actions from '../../store/news/actions'
+import { actions as news } from '../../store/news/actions'
+import { actions as games } from '../../store/games/actions'
 import styled from 'styled-components';
 
 const Flex = styled.div`
@@ -26,20 +28,25 @@ class NavigationMenu extends Component {
     this.props.onSelectNews(str)
   }
 
+  navigateHandler = (id) => {
+    this.props.history.push(`game/${id}`)
+    this.props.onSelectGame(id)
+  }
+
   render () {
     let body = ''
     switch(this.state.active) {
       case 'Top sales':
-        body = (<TopSales news={this.props.news}/>)
+        body = (<TopSales news={this.props.news} click={(id) => this.navigateHandler(id)}/>)
         break;
       case 'News':
         body = (<News  news={this.props.news}/>)
         break;
       case 'Analisis':
-        body = (<Analisis news={this.props.news}/>)
+        body = (<Analisis news={this.props.news} title={"game analisis"} color={"blue"}/>)
         break;
       case 'Streams':
-        body = (<Streams news={this.props.news}/>)
+        body = (<Streams news={this.props.news} title={"game stream"} color={"#6242f4"}/>)
         break;
       case 'Guides':
         body = (<div>Guides</div>)
@@ -67,8 +74,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onSelectNews: (str) => dispatch(actions.getNews(str))
+    onSelectNews: (str) => dispatch(news.getNews(str)),
+    onSelectGame: (id) => dispatch(games.getSingleGame(id))
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(NavigationMenu)
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(NavigationMenu))

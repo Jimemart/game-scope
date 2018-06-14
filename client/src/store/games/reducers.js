@@ -17,6 +17,11 @@ export const reducer = (state = initialState, action) => {
        ...state,
        relevant: action.relevant
      }
+    case constants.SET_SINGLE_GAME:
+      return {
+        ...state,
+        game: action.game
+      }
     default:
       return state
   }

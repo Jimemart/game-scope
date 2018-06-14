@@ -6,7 +6,8 @@
     "platform": 1,
     "release": "20th March 2018",
     "studio": "Santa Monica",
-    "points": "650"
+    "points": "650",
+    "id": 1
   },
   {
     "img": "https://media.vandal.net/m/45807/fifa-18-201791623107_1.jpg",
@@ -15,7 +16,8 @@
     "platform": 2,
     "release": "29th Sept 2017",
     "studio": "EA Sports",
-    "points": "300"
+    "points": "300",
+    "id": 2
   },
   {
     "img": "https://media.vandal.net/m/48289/far-cry-5-20183131312_1.jpg",
@@ -24,7 +26,8 @@
     "platform": 1,
     "release": "27th March 2018",
     "studio": "Ubisoft",
-    "points": "700"
+    "points": "700",
+    "id": 3
   },
   {
     "img": "https://media.vandal.net/m/14972/the-legend-of-zelda-breath-of-the-wild-201732131319_21.jpg",
@@ -33,7 +36,8 @@
     "platform": 3,
     "release": "3rd March 2017",
     "studio": "Nintendo",
-    "points": "600"
+    "points": "600",
+    "id": 4
   },
   {
     "img": "https://vignette.wikia.nocookie.net/zelda/images/c/c8/Hyrule_Warriors_Car%C3%A1tula.jpg/revision/latest?cb=20171017022948&path-prefix=es",
@@ -42,7 +46,8 @@
     "platform": 3,
     "release": "18th May 2018",
     "studio": "Team Ninja",
-    "points": "550"
+    "points": "550",
+    "id": 5
   },
   {
     "img": "https://i11b.3djuegos.com/juegos/13427/crash_bandicoot_remaster__nombre_provisional_/fotos/ficha/crash_bandicoot_remaster__nombre_provisional_-3727501.jpg",
@@ -51,7 +56,8 @@
     "platform": 1,
     "release": "30th June 2017",
     "studio": "Vicarious Visions",
-    "points": "400"
+    "points": "400",
+    "id": 6
   },
   {
     "img": "http://cdn.shopify.com/s/files/1/2701/9572/products/Switch_Donkey_Kong_Country_Tropical_Freeze_1200x1200.png?v=1521942128",
@@ -60,7 +66,8 @@
     "platform": 3,
     "release": "4th May 2018",
     "studio": "Retro Studios",
-    "points": "550"
+    "points": "550",
+    "id": 7
   },
   {
     "img": "https://i11b.3djuegos.com/juegos/14364/assassin__039_s_creed__2017_/fotos/ficha/assassin__039_s_creed__2017_-3752541.jpg",
@@ -69,6 +76,7 @@
     "platform": 2,
     "release": "27th October 2017",
     "studio": "Ubisoft",
-    "points": "650"
+    "points": "650",
+    "id": 8
   }
 ]

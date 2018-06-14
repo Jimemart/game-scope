@@ -5,7 +5,7 @@ const Analisis = (props) => {
   const {news} = props
   const shapedAnalisis = news ? news.map((elem, i) => {
     return (
-      <Card elem={elem} key={i}/>
+      <Card elem={elem} key={i} {...props}/>
     )
   }) : ''
 

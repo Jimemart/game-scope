@@ -19,7 +19,8 @@ export const get = (url, params = undefined) => {
 
 export const games = {
   latest: () => get('latest'),
-  relevant: () => get('relevant')
+  relevant: () => get('relevant'),
+  single: (id) => get(`game/${id}`)
 }
 
 export const news = {

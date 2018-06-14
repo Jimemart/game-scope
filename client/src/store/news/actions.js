@@ -13,3 +13,7 @@ export const setNews = (news) => {
     news: news
   }
 }
+
+export const actions = {
+  getNews
+}

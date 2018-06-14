@@ -1,6 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Description, Rating, Shadow } from '../'
+import { Description, Rating, Shadow, Price } from '../'
+
+const Zindex = styled.div`
+  z-index: 2;
+`
 
 const StyledSlide = styled.div`
   background: url(${props => props.img});
@@ -25,11 +29,13 @@ const Slide = (props) => {
         title={props.game.title}
         tags={props.game.tags}
       />
+    <Zindex>
       <Rating
         rating={props.game.rating}
         source={props.game.source}
-        out={props.game.out}
         />
+      <Price out={props.game.out}/>
+    </Zindex>
       <Shadow main/>
       </StyledSlide>
     </Relative>

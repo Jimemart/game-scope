@@ -60,7 +60,8 @@ const TopSales = (props) => {
             <Left>
               <Pill
                 text={'buy'}
-                background={'#2b9b41'}/>
+                background={'#2b9b41'}
+                onClick={() => props.click(elem.id)}/>
             </Left>
           </FlexContainer>
         </Information>

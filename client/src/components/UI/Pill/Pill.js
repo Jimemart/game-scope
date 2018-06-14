@@ -19,6 +19,7 @@ const Pill = (props) => {
      background={props.background}
      width={props.width}
      font={props.font}
+     onClick={props.onClick}
      float={props.float}
      padding={props.padding}>
       {props.text}

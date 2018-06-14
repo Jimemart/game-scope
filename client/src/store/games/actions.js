@@ -25,3 +25,23 @@ export const setRelevant = (games) => {
     relevant: games
   }
 }
+
+export const getSingleGame = (id) => {
+  return {
+    type: constants.GET_SINGLE,
+    id
+  }
+}
+
+export const setSingleGame = (game) => {
+  return {
+    type: constants.SET_SINGLE_GAME,
+    game
+  }
+}
+
+export const actions = {
+  getLatest,
+  getRelevant,
+  getSingleGame
+}
