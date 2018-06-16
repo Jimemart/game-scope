@@ -17,10 +17,20 @@ export const reducer = (state = initialState, action) => {
        ...state,
        relevant: action.relevant
      }
+    case constants.GET_SINGLE:
+      return {
+        ...state,
+        game: {
+          loading: true
+        }
+      }
     case constants.SET_SINGLE_GAME:
       return {
         ...state,
-        game: action.game
+        game: {
+          ...action.game,
+          loading: false
+        },
       }
     default:
       return state

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Pill, Icon, FlexContainer } from '../'
+import { Icon } from '../'
 
 const Holder = styled.div`
   border-radius: 50px;
@@ -28,12 +28,6 @@ const Circle = styled.div`
 
 const CenterArea = styled.div`
   padding: 15px 10px 10px 10px;
-`
-const Price = styled.div`
-  color: white;
-  font-size: 50px;
-  margin-left:30px;
-  font-weight: light;
 `
 
 const Rating = (props) => {

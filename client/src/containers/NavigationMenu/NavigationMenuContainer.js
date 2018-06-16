@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { Menu, TopSales, News, Analisis, Streams } from '../../components'
+import { get } from 'lodash'
+import { singleGame } from '../../store/games/selectors'
 import { actions as news } from '../../store/news/actions'
 import { actions as games } from '../../store/games/actions'
 import styled from 'styled-components';
@@ -23,13 +25,19 @@ class NavigationMenu extends Component {
     this.props.onSelectNews('Top sales')
   }
 
+  componentDidUpdate(newProps) {
+    const { game } = this.props
+    if(get(game, 'loading') === false) {
+       this.props.history.push(`game/${game.id}`)
+    }
+  }
+
   setActiveHandler = (str) => {
     this.setState({active: str})
     this.props.onSelectNews(str)
   }
 
   navigateHandler = (id) => {
-    this.props.history.push(`game/${id}`)
     this.props.onSelectGame(id)
   }
 
@@ -68,7 +76,8 @@ class NavigationMenu extends Component {
 
 const mapStateToProps = state => {
   return {
-    news: state.newsReducer.news
+    news: state.newsReducer.news,
+    game: singleGame(state)
   }
 }
 
