@@ -4,6 +4,31 @@
     "name": "God Of War",
     "rating": "5.0",
     "source": "VANDAL",
-    "out": true
-  }
+    "out": true,
+    "background" : "https://img.etsystatic.com/il/14966e/1014239768/il_570xN.1014239768_5511.jpg?version=1",
+    "front": "http://www.laps4.com/foro/imagehosting/206511593fc37a89bfb.jpg",
+    "avatars": [
+     "https://avatarfiles.alphacoders.com/119/thumb-119824.jpg",
+     "https://store.playstation.com/store/api/chihiro/00_09_000/container/US/en/999/UP9000-CUSA01623_00-AV00000000000006/1526990792000/image?w=240&h=240&bg_color=000000&opacity=100&_version=00_09_000",
+     "https://store.playstation.com/store/api/chihiro/00_09_000/container/MX/es/999/UP9000-BCUS98232_00-UAGOWAKRATOSMAN0/1520577238000/image?w=240&h=240&bg_color=000000&opacity=100&_version=00_09_000",
+     "https://orig00.deviantart.net/11f3/f/2013/096/a/9/ultimate_god_of_war__ascension_avatar_extreme_2_by_sonicx2011-d60nc6o.png"
+    ],
+   "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan mauris nisl, et mattis libero condimentum et. Nulla facilisi. Ut at commodo orci. Integer eu lectus purus. Maecenas ac sapien tincidunt, tristique odio at, facilisis purus. Fusce sed mi id orci tempor scelerisque. In pretium sollicitudin metus ac sagittis."
+ },
+ {
+   "id": 2,
+   "name": "Fifa 18",
+   "rating": "4.5",
+   "source": "VANDAL",
+   "out": true,
+   "background" : "http://www.e-sportsmag.com/wp-content/uploads/2017/10/FIFA-18-TRUCOS-EXPRIMIR-JUEGO-2.jpg",
+   "front": "https://media.vandal.net/m/45807/fifa-18-201791623107_1.jpg",
+   "avatars": [
+    "https://avatarfiles.alphacoders.com/109/109201.jpg",
+    "https://pbs.twimg.com/media/ClS6euEXEAAZUyo.jpg",
+    "http://cdn.24.co.za/files/Cms/General/d/1910/40e4d0fc07104c4596c8607c20baafa8.jpg",
+    "https://scontent-iad3-1.cdninstagram.com/vp/3b0869fec15c4aa46903561310579142/5B9875D4/t51.2885-15/e35/20590054_1353467518036330_1460462801045684224_n.jpg"
+   ],
+  "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan mauris nisl, et mattis libero condimentum et. Nulla facilisi. Ut at commodo orci. Integer eu lectus purus. Maecenas ac sapien tincidunt, tristique odio at, facilisis purus. Fusce sed mi id orci tempor scelerisque. In pretium sollicitudin metus ac sagittis."
+ }
 ]

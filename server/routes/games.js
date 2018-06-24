@@ -19,7 +19,6 @@ router.get('/news/:id', function(req, res, next) {
 
 router.get('/game/:id', function(req, res, next) {
   const game = games.filter(elem => elem.id == req.params.id)
-  console.log(game)
   res.status(200).send(game[0])
 })
 
