@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { Menu, TopSales, News, Analisis, Streams } from '../../components'
-import { get } from 'lodash'
+import { Menu, TopSales, News, Analisis, Streams, DisplayList } from '../../components'
+import { get, isEqual } from 'lodash'
 import { singleGame } from '../../store/games/selectors'
 import { actions as news } from '../../store/news/actions'
 import { actions as games } from '../../store/games/actions'
@@ -26,7 +26,7 @@ class NavigationMenu extends Component {
   }
 
   componentDidUpdate(newProps) {
-    const { game } = this.props
+    const { game, history } = this.props
     if(get(game, 'loading') === false) {
        this.props.history.push(`game/${game.id}`)
     }
@@ -42,31 +42,37 @@ class NavigationMenu extends Component {
   }
 
   render () {
-    let body = ''
+    let ItemsList = ''
+    let color = ''
+    let title = ''
     switch(this.state.active) {
       case 'Top sales':
-        body = (<TopSales news={this.props.news} click={(id) => this.navigateHandler(id)}/>)
+        ItemsList = DisplayList(TopSales)
         break;
       case 'News':
-        body = (<News  news={this.props.news}/>)
+        ItemsList = DisplayList(News)
         break;
       case 'Analisis':
-        body = (<Analisis news={this.props.news} title={"game analisis"} color={"blue"}/>)
+        ItemsList = DisplayList(Analisis)
+        title= 'game analisis'
+        color= 'blue'
         break;
       case 'Streams':
-        body = (<Streams news={this.props.news} title={"game stream"} color={"#6242f4"}/>)
+        ItemsList = DisplayList(Streams)
+        title= 'game stream'
+        color= '#6242f4'
         break;
       case 'Guides':
-        body = (<div>Guides</div>)
+        ItemsList = (<div>Guides</div>)
         break;
       default:
-        body = (<div>Top sales</div>)
+        ItemsList = (<div>Top sales</div>)
     }
     return (
       <div>
         <Menu pills={this.pills} active={this.state.active} setActive={(str) => this.setActiveHandler(str)}/>
         <Flex>
-          {body}
+          <ItemsList items={this.props.news} color={color} title={title}/>
         </Flex>
       </div>
 

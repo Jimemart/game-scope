@@ -24,20 +24,19 @@ const Spreader = styled.div`
   }
 `
 const News = (props) => {
-  const { news } = props
-  const shapedNews = news ? news.map((elem, i) => {
+  const { item } = props
     return (
-      <HorizontalCard key={i} width={'47.5%'}>
+      <HorizontalCard width={'47.5%'}>
         <Spreader>
           <Title title={'game news'}/>
         </Spreader>
         <Spreader justify={'flex-start'} lastPadding>
           <div>
-            <img src={elem.mini} width="140px" height="140px;" alt={elem.title}/>
+            <img src={item.mini} width="140px" height="140px;" alt={item.title}/>
           </div>
           <div>
-            <h3>{elem.title}</h3>
-            <p>{elem.body}</p>
+            <h3>{item.title}</h3>
+            <p>{item.body}</p>
           </div>
         </Spreader>
         <Spreader>
@@ -45,10 +44,6 @@ const News = (props) => {
         </Spreader>
       </HorizontalCard>
     )
-  }) : ''
-
-  return shapedNews
-
 }
 
 export default News

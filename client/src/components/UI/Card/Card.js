@@ -24,7 +24,6 @@ const H3 = styled.h3`
 `
 
 const Card = (props) => {
-  console.log(props)
   return (
     <HorizontalCard width={'47.5%'} marginTop="20px;">
         {!props.reverse ? (

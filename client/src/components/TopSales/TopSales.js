@@ -37,41 +37,38 @@ const Left = styled.div`
   left: -30px;
 `
 const TopSales = (props) => {
-  const games = props.news ? props.news.map((elem, i) => {
+  const { item } = props
     return (
-        <Holder key={i} >
-          <GameNavigator id={elem.id}>
-          <Game img={elem.img}/>
+      <Holder>
+        <GameNavigator id={item.id}>
+          <Game img={item.img}/>
           <Information>
-            <h3>{elem.name}</h3>
+            <h3>{item.name}</h3>
             <FlexContainer color="#808080" align="center">
               <div>
                 <Pa>Studio</Pa>
-                <Pa>{elem.studio}</Pa>
+                <Pa>{item.studio}</Pa>
               </div>
               <div>
                 <Pa color={"#2b9b41"}>Release</Pa>
-                <Pa>{elem.release}</Pa>
+                <Pa>{item.release}</Pa>
               </div>
             </FlexContainer>
             <FlexContainer  color="#808080" align="center">
               <div>
-                <Price>{elem.price}</Price>
+                <Price>{item.price}</Price>
               </div>
               <Left>
                 <Pill
                   text={'buy'}
                   background={'#2b9b41'}
-                  onClick={() => props.click(elem.id)}/>
+                  onClick={() => props.click(item.id)}/>
               </Left>
             </FlexContainer>
           </Information>
-        </GameNavigator>
-          
-        </Holder>
-    )
-  }) : ''
-  return games
+       </GameNavigator>
+      </Holder>
+  )
 }
 
 export default TopSales
