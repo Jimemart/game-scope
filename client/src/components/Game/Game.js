@@ -1,8 +1,8 @@
 import React from 'react';
-import { Rating, Price, ImageGame, FlexContainer } from '../'
+import { ImageGame, FlexContainer, GameCard } from '../'
 
 const Game = (props) => {
-  const { game } = props
+  const { game, file } = props
   return (
     <FlexContainer justify="center">
       <FlexContainer width="75%" justify="flex-start">
@@ -11,6 +11,9 @@ const Game = (props) => {
           front={game.front}
           avatars={game.avatars}
           description={game.short_description}/>
+        <GameCard
+          game={game}
+          file={file} />
       </FlexContainer>
     </FlexContainer>
 

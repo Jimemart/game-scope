@@ -39,7 +39,7 @@ const Left = styled.div`
 const TopSales = (props) => {
   const { item } = props
     return (
-      <Holder>
+      <Holder onClick={() => props.click(item.id)}>
         <GameNavigator id={item.id}>
           <Game img={item.img}/>
           <Information>

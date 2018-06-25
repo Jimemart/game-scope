@@ -6,6 +6,7 @@ const Holder = styled.div`
   border-radius: 50px;
   background: rgba(15,15,15,0.7);
   display:flex;
+  max-height: 100px;
   justify-content: flex-start;
   color: white;
   h5, p {

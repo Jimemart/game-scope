@@ -20,6 +20,7 @@ const ImgHolder = styled.div`
 const Zindex = styled.div`
     z-index: 1;
     width: 80%;
+
 `
 const Title = styled.h3`
   text-transform: uppercase;
@@ -28,6 +29,10 @@ const Title = styled.h3`
   span {
     color: white;
   }
+`
+const Small = styled.p`
+  color: white;
+  margin-top:15px;
 `
 
 const ImageGame = (props) => {
@@ -52,6 +57,11 @@ const ImageGame = (props) => {
                 ))
               }
             </FlexContainer>
+          </Zindex>
+          <Zindex>
+            <Small>
+              {description}
+            </Small>
           </Zindex>
         </FlexContainer>
 

@@ -25,20 +25,21 @@ class NavigationMenu extends Component {
     this.props.onSelectNews('Top sales')
   }
 
-  componentDidUpdate(newProps) {
-    const { game, history } = this.props
-    if(get(game, 'loading') === false) {
-       this.props.history.push(`game/${game.id}`)
-    }
+  // componentDidUpdate(newProps) {
+  //   const { game, history } = this.props
+  //   if(get(game, 'loading') === false) {
+  //      this.props.history.push(`game/${game.id}`)
+  //   }
+  // }
+
+  getGame = (id) => {
+    console.log('aqui')
+    this.props.onSelectGame(id)
   }
 
   setActiveHandler = (str) => {
     this.setState({active: str})
     this.props.onSelectNews(str)
-  }
-
-  navigateHandler = (id) => {
-    this.props.onSelectGame(id)
   }
 
   render () {
@@ -72,7 +73,7 @@ class NavigationMenu extends Component {
       <div>
         <Menu pills={this.pills} active={this.state.active} setActive={(str) => this.setActiveHandler(str)}/>
         <Flex>
-          <ItemsList items={this.props.news} color={color} title={title}/>
+          <ItemsList items={this.props.news} color={color} title={title} click={(id) => this.getGame(id)}/>
         </Flex>
       </div>
 

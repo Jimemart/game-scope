@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Game } from '../../components'
 import { connect } from 'react-redux'
-import { singleGame } from '../../store/games/selectors'
+import { singleGame, getArrayFormated } from '../../store/games/selectors'
 import { RingLoader } from 'react-spinners';
 import { actions as games } from '../../store/games/actions'
 
@@ -32,7 +32,8 @@ export class GamePageContainer extends Component {
 }
 
 const mapStateToProps = state => ({
-  game: singleGame(state)
+  game: singleGame(state),
+  file: getArrayFormated(state)
 })
 
 const mapDispatchToProps = dispatch => {
