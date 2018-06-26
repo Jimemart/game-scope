@@ -1,7 +1,7 @@
 import React from 'react'
 import { map } from 'lodash'
 import styled from 'styled-components';
-import { FlexContainer, Rating, Price } from '../'
+import { FlexContainer, Rating, Price, Menu } from '../'
 
 const Title = styled.h2`
   color: white;
@@ -26,12 +26,32 @@ const Dl = styled.dl`
   margin-top: 0;
   margin-bottom: 10px;
 `
+
+const Holder = styled.div`
+  width: ${props => props.width ? props.width : 'auto'};
+  max-height: ${props => props.maxheight ? props.maxheight : ''};
+  color: white;
+  overflow-y: scroll;
+  p {
+    padding-right: 20px;
+  }
+  ::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2b9b41;
+}
+`
+
 const GameCard = (props) => {
   const { game, file } = props
+  const pills = ['Resumen', 'Images', 'Videos', 'Analisis', 'Second hand']
   return (
-    <FlexContainer width="70%" background="black" padding="30px 40px" direction="column" justify="flex-start">
+    <FlexContainer width="70%" background="rgb(22,22,22)" padding="30px 40px" direction="column" justify="flex-start">
       <Title>{game.name}</Title>
-      <FlexContainer justify="space-between" direction="row">
+      <FlexContainer justify="flex-start" direction="row">
         <List>
           <dl>
             {map(file, (elem, index) => (
@@ -46,6 +66,14 @@ const GameCard = (props) => {
       </FlexContainer>
       <FlexContainer direction="row" width="50%">
         <Price out={true}/>
+      </FlexContainer>
+      <FlexContainer>
+        <Menu pills={pills}/>
+      </FlexContainer>
+      <FlexContainer justify="row">
+        <Holder width="60%" maxheight="250px">
+          <p>{game.resumen}</p>
+        </Holder>
       </FlexContainer>
     </FlexContainer>
   )

@@ -44,7 +44,8 @@
     "release": "29th Sept 2017",
     "key_words": ["sports", "soccer", "season"],
     "type": "Sports"
-  }
+  },
+  "resumen":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus justo non diam venenatis faucibus. Nam et nisl id nibh aliquet pellentesque. Nunc vestibulum dapibus mollis. Aenean id sem ac arcu feugiat interdum. Vestibulum accumsan ante a venenatis laoreet. Vestibulum lorem risus, porttitor non turpis vehicula, mattis tincidunt quam. Nullam malesuada dictum risus, nec consectetur massa condimentum in. Morbi consectetur sapien non pellentesque ultrices. Donec vulputate ipsum magna, eu convallis tortor iaculis id. Vestibulum varius nulla turpis, vitae venenatis metus tempus quis. In et lorem felis. Curabitur consequat lectus purus, vitae sollicitudin dolor cursus a. Interdum et malesuada fames ac ante ipsum primis in faucibus. In fermentum lectus quis erat efficitur, eu luctus mi faucibus. Pellentesque eu velit leo. Pellentesque eu nulla et neque aliquet vulputate at at sem. Vivamus mauris felis, dictum nec sem quis, mollis maximus diam. Aliquam viverra molestie nulla, ut aliquam ligula scelerisque bibendum. Suspendisse egestas enim at massa condimentum vestibulum. Vestibulum dignissim accumsan enim eu dictum. Vivamus tristique urna dictum risus pellentesque hendrerit. Donec sollicitudin, elit vel dictum mattis, velit enim hendrerit lorem, nec efficitur nibh ex pharetra tortor."
 },
 {
   "id": 3,
@@ -68,5 +69,5 @@
    "key_words": ["guns", "religion", "hunt"],
    "type": "Adventure"
  }
-}
+ }
 ]
