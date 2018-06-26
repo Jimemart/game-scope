@@ -14,7 +14,14 @@
      "https://orig00.deviantart.net/11f3/f/2013/096/a/9/ultimate_god_of_war__ascension_avatar_extreme_2_by_sonicx2011-d60nc6o.png"
     ],
    "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan mauris nisl, et mattis libero condimentum et.",
-   "platforms": [1]
+   "file": {
+     "platforms": [1],
+     "studio": "Santa Mónica",
+     "release": "20th March 2018",
+     "key_words": ["Myth", "Gods", "Kratos"],
+     "type": "Adventure"
+
+   }
  },
  {
    "id": 2,
@@ -38,5 +45,28 @@
     "key_words": ["sports", "soccer", "season"],
     "type": "Sports"
   }
+},
+{
+  "id": 3,
+  "name": "Far cry 5",
+  "rating": "4.0",
+  "source": "VANDAL",
+  "out": true,
+  "background" : "https://hipertextual.com/files/2018/03/Far-Cry-5-670x410.jpg",
+  "front": "https://media.vandal.net/m/48289/far-cry-5-20183131312_1.jpg",
+  "avatars": [
+   "https://store.playstation.com/store/api/chihiro/00_09_000/container/ES/es/999/EP0001-CUSA05847_00-AV00000000000003/1524484851000/image?w=240&h=240&bg_color=000000&opacity=100&_version=00_09_000",
+   "https://store.playstation.com/store/api/chihiro/00_09_000/container/ES/es/999/EP0001-CUSA05847_00-AV00000000000008/1524484861000/image?w=240&h=240&bg_color=000000&opacity=100&_version=00_09_000",
+   "https://store.playstation.com/store/api/chihiro/00_09_000/container/IS/en/99/EP0001-CUSA05847_00-AV00000000000007//image?_version=00_09_000&platform=chihiro&w=720&h=720&bg_color=000000&opacity=100",
+   "https://store.playstation.com/store/api/chihiro/00_09_000/container/IS/en/99/EP0001-CUSA05847_00-AV00000000000011//image?_version=00_09_000&platform=chihiro&w=720&h=720&bg_color=000000&opacity=100"
+  ],
+ "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan mauris nisl, et mattis libero condimentum et.",
+ "file": {
+   "platforms": [1,2,4],
+   "studio": "Ubisoft",
+   "release": "27th March 2018",
+   "key_words": ["guns", "religion", "hunt"],
+   "type": "Adventure"
  }
+}
 ]

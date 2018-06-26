@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { Menu, TopSales, News, Analisis, Streams, DisplayList } from '../../components'
-import { get, isEqual } from 'lodash'
 import { singleGame } from '../../store/games/selectors'
 import { actions as news } from '../../store/news/actions'
 import { actions as games } from '../../store/games/actions'
@@ -25,15 +24,7 @@ class NavigationMenu extends Component {
     this.props.onSelectNews('Top sales')
   }
 
-  // componentDidUpdate(newProps) {
-  //   const { game, history } = this.props
-  //   if(get(game, 'loading') === false) {
-  //      this.props.history.push(`game/${game.id}`)
-  //   }
-  // }
-
   getGame = (id) => {
-    console.log('aqui')
     this.props.onSelectGame(id)
   }
 

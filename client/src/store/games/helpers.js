@@ -24,7 +24,7 @@ export const formatFile = (file) => {
   return {
     estuido: studio,
     lanzamiento: release,
-    claves: key_words.join(' '),
+    claves: key_words.join(', '),
     genero: type,
     plataformas: extractPlatforms(platforms)
   }

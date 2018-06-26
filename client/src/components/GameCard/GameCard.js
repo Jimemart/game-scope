@@ -1,7 +1,7 @@
 import React from 'react'
 import { map } from 'lodash'
 import styled from 'styled-components';
-import { FlexContainer, Rating } from '../'
+import { FlexContainer, Rating, Price } from '../'
 
 const Title = styled.h2`
   color: white;
@@ -12,10 +12,22 @@ const Title = styled.h2`
 
 const List = styled.div`
   color: white;
+  width: 50%;
+`
+const Dt = styled.dt`
+  text-transform: capitalize;
+  display: inline-block;
+  margin-right: 5px;
+  width:35%;
+
+`
+const Dl = styled.dl`
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 10px;
 `
 const GameCard = (props) => {
   const { game, file } = props
-  console.log(props)
   return (
     <FlexContainer width="70%" background="black" padding="30px 40px" direction="column" justify="flex-start">
       <Title>{game.name}</Title>
@@ -24,13 +36,16 @@ const GameCard = (props) => {
           <dl>
             {map(file, (elem, index) => (
               <div key={index}>
-                <dt>{elem[0]}</dt><dl>{elem[1]}</dl>
+                <Dt>{elem[0]}: </Dt>
+                <Dl>{elem[1]}</Dl>
               </div>
             ))}
           </dl>
         </List>
         <Rating rating={game.rating} source={game.source}/>
-        
+      </FlexContainer>
+      <FlexContainer direction="row" width="50%">
+        <Price out={true}/>
       </FlexContainer>
     </FlexContainer>
   )

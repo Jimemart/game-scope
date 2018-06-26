@@ -34,7 +34,7 @@ const Slide = (props) => {
         rating={props.game.rating}
         source={props.game.source}
         />
-      <Price out={props.game.out}/>
+      <Price out={props.game.out} marginleft="30px"/>
     </Zindex>
       <Shadow main/>
       </StyledSlide>

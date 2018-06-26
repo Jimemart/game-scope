@@ -8,6 +8,7 @@ const FlexContainer = styled.div`
   justify-content: ${props => props.justify ? props.justify : 'space-between'};
   align-items: ${props => props.align ? props.align : 'auto'};
   margin-top:${props => props.marginTop ? props.marginTop : '10px'};
+  margin-bottom:${props => props.marginbottom ? props.marginbottom : '0'};
   color: ${props => props.color ? props.color : 'inherit'};
   height: ${props => props.height ? props.height: 'auto'};
   margin-right: ${props => props.marginRight ? props.marginRight : '0px'};

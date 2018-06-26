@@ -33,6 +33,7 @@ const Title = styled.h3`
 const Small = styled.p`
   color: white;
   margin-top:15px;
+  font-size: 0.7em;
 `
 
 const ImageGame = (props) => {
@@ -53,7 +54,7 @@ const ImageGame = (props) => {
             <FlexContainer>
               {
                 map(avatars, (elem, index) => (
-                  <img key={index} src={elem} alt="image"  width="70px" height="70px"/>
+                  <img key={index} src={elem} alt="avatar"  width="20%" height="20%"/>
                 ))
               }
             </FlexContainer>

@@ -4,7 +4,7 @@ import { ImageGame, FlexContainer, GameCard } from '../'
 const Game = (props) => {
   const { game, file } = props
   return (
-    <FlexContainer justify="center">
+    <FlexContainer justify="center" marginbottom="50px">
       <FlexContainer width="75%" justify="flex-start">
         <ImageGame
           background={game.background}

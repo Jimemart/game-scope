@@ -12,16 +12,12 @@ const PillStyled = styled.div`
   color: white;
   padding: ${props => props.padding ? props.padding : '10px'};
   font-size: ${props => props.font ? props.font : '12px'};
+  margin-bottom: ${props => props.marginbottom ? props.marginbottom : '0'};
 `
 const Pill = (props) => {
   return (
     <PillStyled
-     background={props.background}
-     width={props.width}
-     font={props.font}
-     onClick={props.onClick}
-     float={props.float}
-     padding={props.padding}>
+     {...props}>
       {props.text}
     </PillStyled>
   )
