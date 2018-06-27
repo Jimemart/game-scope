@@ -15,7 +15,7 @@ const MenuHolder = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: ${props => props.marginbottom ? props.marginbottom : '20px'};
 `
 
 const Menu = (props) => {
@@ -36,7 +36,7 @@ const Menu = (props) => {
        )
    })
   return (
-    <MenuHolder>
+    <MenuHolder marginbottom={props.marginbottom}>
       {pills}
     </MenuHolder>
   )

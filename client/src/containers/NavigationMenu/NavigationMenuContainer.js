@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { Menu, TopSales, News, Analisis, Streams, DisplayList } from '../../components'
 import { singleGame } from '../../store/games/selectors'
+import { currentNews } from '../../store/news/selectors'
 import { actions as news } from '../../store/news/actions'
 import { actions as games } from '../../store/games/actions'
 import styled from 'styled-components';
@@ -72,9 +73,9 @@ class NavigationMenu extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state, ownProps) => {
   return {
-    news: state.newsReducer.news,
+    news: currentNews(ownProps)(state),
     game: singleGame(state)
   }
 }
@@ -86,4 +87,4 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(NavigationMenu))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(NavigationMenu))

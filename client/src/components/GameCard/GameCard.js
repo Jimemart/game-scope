@@ -33,7 +33,7 @@ const Holder = styled.div`
   color: white;
   overflow-y: scroll;
   p {
-    padding-right: 20px;
+    padding-right: 15px;
   }
   ::-webkit-scrollbar {
     width: 3px;
@@ -68,12 +68,17 @@ const GameCard = (props) => {
         <Price out={true}/>
       </FlexContainer>
       <FlexContainer>
-        <Menu pills={pills}/>
+        <Menu pills={pills} active="Resumen" marginbottom="10px"/>
       </FlexContainer>
-      <FlexContainer justify="row">
-        <Holder width="60%" maxheight="250px">
+      <FlexContainer justify="row" maxheight="270px">
+        <Holder width="100%">
           <p>{game.resumen}</p>
         </Holder>
+        <FlexContainer wrap="wrap" direction="row" padding="10px 10px 0">
+          {map(game.screenshots, (elem, index) => (
+            <img src={elem} width="48%" alt="screenshot" key={index} height="45%"/>
+          ))}
+        </FlexContainer>
       </FlexContainer>
     </FlexContainer>
   )

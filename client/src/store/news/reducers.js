@@ -1,7 +1,7 @@
 import * as constants from './constants'
 
 const initialState = {
-  news: null
+  news: []
 }
 
 export const reducer = (state = initialState, action) => {

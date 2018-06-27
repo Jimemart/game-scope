@@ -12,6 +12,7 @@ const ImgBackground = styled.div`
   background: ${props => props.background ? `url(${props.background})` : 'transparent'};
   background-size: cover;
   background-position: bottom;
+  height:100%;
 `
 const ImgHolder = styled.div`
   width: 80%;
@@ -39,7 +40,7 @@ const Small = styled.p`
 const ImageGame = (props) => {
   const { background, front, avatars, description } = props
   return (
-    <FlexContainer width="30%" direction="column" align="center">
+    <FlexContainer width="40%" direction="column" align="center" height="98.5%">
       <ImgBackground background={background}>
         <FlexContainer direction="column" align="center">
           <ImgHolder>

@@ -1,11 +1,12 @@
 import React from 'react';
-import { ImageGame, FlexContainer, GameCard } from '../'
+import { ImageGame, FlexContainer, GameCard, GameWorld } from '../'
 
 const Game = (props) => {
   const { game, file } = props
   return (
+    <div>
     <FlexContainer justify="center" marginbottom="50px">
-      <FlexContainer width="75%" justify="flex-start">
+      <FlexContainer width="80%" justify="flex-start">
         <ImageGame
           background={game.background}
           front={game.front}
@@ -16,7 +17,8 @@ const Game = (props) => {
           file={file} />
       </FlexContainer>
     </FlexContainer>
-
+    <GameWorld />
+    </div>
   )
 }
 

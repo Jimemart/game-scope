@@ -15,5 +15,7 @@ const FlexContainer = styled.div`
   margin-left: ${props => props.marginLeft ? props.marginLeft : '0px'};
   width: ${props => props.width ? props.width : '100%'};
   background: ${props => props.background ? props.background : 'transparent'};
+  flex-wrap: ${props => props.wrap ? props.wrap: 'no-wrap'};
+  max-height: ${props => props.maxheight ? props.maxheight: 'auto'};
 `
 export default FlexContainer

@@ -21,7 +21,14 @@
      "key_words": ["Myth", "Gods", "Kratos"],
      "type": "Adventure"
 
-   }
+   },
+   "resumen":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus justo non diam venenatis faucibus. Nam et nisl id nibh aliquet pellentesque. Nunc vestibulum dapibus mollis. Aenean id sem ac arcu feugiat interdum. Vestibulum accumsan ante a venenatis laoreet. Vestibulum lorem risus, porttitor non turpis vehicula, mattis tincidunt quam. Nullam malesuada dictum risus, nec consectetur massa condimentum in. Morbi consectetur sapien non pellentesque ultrices. Donec vulputate ipsum magna, eu convallis tortor iaculis id. Vestibulum varius nulla turpis, vitae venenatis metus tempus quis. In et lorem felis. Curabitur consequat lectus purus, vitae sollicitudin dolor cursus a. Interdum et malesuada fames ac ante ipsum primis in faucibus. In fermentum lectus quis erat efficitur, eu luctus mi faucibus. Pellentesque eu velit leo. Pellentesque eu nulla et neque aliquet vulputate at at sem. Vivamus mauris felis, dictum nec sem quis, mollis maximus diam. Aliquam viverra molestie nulla, ut aliquam ligula scelerisque bibendum. Suspendisse egestas enim at massa condimentum vestibulum. Vestibulum dignissim accumsan enim eu dictum. Vivamus tristique urna dictum risus pellentesque hendrerit. Donec sollicitudin, elit vel dictum mattis, velit enim hendrerit lorem, nec efficitur nibh ex pharetra tortor.",
+   "screenshots": [
+     "http://img1.meristation.as.com/files/imagenes/general/god-of-war_1.jpg",
+     "https://gematsu.com/wp-content/uploads/2018/03/GoW-PS4_03-19-18.jpg",
+     "http://media.comicbook.com/2018/03/god-of-war-1093719.jpeg",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf1ZJniqEVBVkaaU78RHgBiZkCz-xbfpiRuII2_CDk1GHgOFyz7g"
+   ]
  },
  {
    "id": 2,
@@ -45,7 +52,14 @@
     "key_words": ["sports", "soccer", "season"],
     "type": "Sports"
   },
-  "resumen":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus justo non diam venenatis faucibus. Nam et nisl id nibh aliquet pellentesque. Nunc vestibulum dapibus mollis. Aenean id sem ac arcu feugiat interdum. Vestibulum accumsan ante a venenatis laoreet. Vestibulum lorem risus, porttitor non turpis vehicula, mattis tincidunt quam. Nullam malesuada dictum risus, nec consectetur massa condimentum in. Morbi consectetur sapien non pellentesque ultrices. Donec vulputate ipsum magna, eu convallis tortor iaculis id. Vestibulum varius nulla turpis, vitae venenatis metus tempus quis. In et lorem felis. Curabitur consequat lectus purus, vitae sollicitudin dolor cursus a. Interdum et malesuada fames ac ante ipsum primis in faucibus. In fermentum lectus quis erat efficitur, eu luctus mi faucibus. Pellentesque eu velit leo. Pellentesque eu nulla et neque aliquet vulputate at at sem. Vivamus mauris felis, dictum nec sem quis, mollis maximus diam. Aliquam viverra molestie nulla, ut aliquam ligula scelerisque bibendum. Suspendisse egestas enim at massa condimentum vestibulum. Vestibulum dignissim accumsan enim eu dictum. Vivamus tristique urna dictum risus pellentesque hendrerit. Donec sollicitudin, elit vel dictum mattis, velit enim hendrerit lorem, nec efficitur nibh ex pharetra tortor."
+  "resumen":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus justo non diam venenatis faucibus. Nam et nisl id nibh aliquet pellentesque. Nunc vestibulum dapibus mollis. Aenean id sem ac arcu feugiat interdum. Vestibulum accumsan ante a venenatis laoreet. Vestibulum lorem risus, porttitor non turpis vehicula, mattis tincidunt quam. Nullam malesuada dictum risus, nec consectetur massa condimentum in. Morbi consectetur sapien non pellentesque ultrices. Donec vulputate ipsum magna, eu convallis tortor iaculis id. Vestibulum varius nulla turpis, vitae venenatis metus tempus quis. In et lorem felis. Curabitur consequat lectus purus, vitae sollicitudin dolor cursus a. Interdum et malesuada fames ac ante ipsum primis in faucibus. In fermentum lectus quis erat efficitur, eu luctus mi faucibus. Pellentesque eu velit leo. Pellentesque eu nulla et neque aliquet vulputate at at sem. Vivamus mauris felis, dictum nec sem quis, mollis maximus diam. Aliquam viverra molestie nulla, ut aliquam ligula scelerisque bibendum. Suspendisse egestas enim at massa condimentum vestibulum. Vestibulum dignissim accumsan enim eu dictum. Vivamus tristique urna dictum risus pellentesque hendrerit. Donec sollicitudin, elit vel dictum mattis, velit enim hendrerit lorem, nec efficitur nibh ex pharetra tortor.",
+  "screenshots": [
+    "https://www.operationsports.com/wp-content/uploads/2017/06/fifa18-1.jpg",
+    "https://ubuykw.s3.amazonaws.com/ubuy/full/1/5/1523968491321fifa18screenshot1920x1080griezmannenwwv1.jpg",
+    "https://www.ps4home.com/wp-content/uploads/2017/06/FIFA18_BOMBANERA_WM.jpg",
+    "https://www.newgamenetwork.com/images/uploads/gallery/FIFA18/f18_09.jpg"
+  ]
+
 },
 {
   "id": 3,
