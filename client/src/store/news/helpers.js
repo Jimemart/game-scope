@@ -3,6 +3,7 @@ export const reduceNews = (news, ownProps) => {
   return news
 
   const half = Math.ceil(news.length / 2)
-  const rest = news.splice(0, half)
+  const myNews = [...news]
+  const rest = myNews.splice(0, half)
   return rest
 }

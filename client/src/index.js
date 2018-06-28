@@ -9,6 +9,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga'
 import rootReducer from './store/root.reducers'
 import { rootSaga } from './store/root.saga'
+import ScrollToTop from './ScrollToTop'
 
 const sagaMiddleware = createSagaMiddleware()
 const store = createStore(
@@ -25,8 +26,10 @@ const app = (
   <Provider store={store}>
     <div>
       <h1>EH</h1>
-      <BrowserRouter>
-        <App />
+      <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
+        <ScrollToTop>
+          <App />
+        </ScrollToTop>
       </BrowserRouter>
     </div>
   </Provider>
