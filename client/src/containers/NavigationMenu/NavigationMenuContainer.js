@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
+import styled from 'styled-components';
+
+import { StateUpdater } from '../'
 import { Menu, TopSales, News, Analisis, Streams, DisplayList } from '../../components'
 import { singleGame } from '../../store/games/selectors'
 import { currentNews } from '../../store/news/selectors'
 import { actions as news } from '../../store/news/actions'
 import { actions as games } from '../../store/games/actions'
-import styled from 'styled-components';
 
 const Flex = styled.div`
   display: flex;
@@ -19,10 +21,6 @@ class NavigationMenu extends Component {
   pills = ['Top sales', 'News', 'Analisis', 'Streams', 'Guides']
   state = {
     active: 'Top sales'
-  }
-
-  componentDidMount () {
-    this.props.onSelectNews('Top sales')
   }
 
   getGame = (id) => {
@@ -62,12 +60,16 @@ class NavigationMenu extends Component {
         ItemsList = (<div>Top sales</div>)
     }
     return (
-      <div>
-        <Menu pills={this.pills} active={this.state.active} setActive={(str) => this.setActiveHandler(str)}/>
-        <Flex>
-          <ItemsList items={this.props.news} color={color} title={title} click={(id) => this.getGame(id)}/>
-        </Flex>
-      </div>
+        <StateUpdater initialState="Top sales" onUpdate={this.setActiveHandler} onMount={() => this.props.onSelectNews(this.state.active)}>
+          {(active, onUpdate) => (
+            <div>
+              <Menu pills={this.pills} active={active} setActive={(str) => onUpdate(str)}/>
+              <Flex>
+                <ItemsList items={this.props.news} color={color} title={title} click={(id) => this.getGame(id)}/>
+              </Flex>
+            </div>
+          )}
+        </StateUpdater>
 
     )
   }

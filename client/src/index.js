@@ -10,6 +10,7 @@ import createSagaMiddleware from 'redux-saga'
 import rootReducer from './store/root.reducers'
 import { rootSaga } from './store/root.saga'
 import ScrollToTop from './ScrollToTop'
+import { NavBar } from './containers'
 
 const sagaMiddleware = createSagaMiddleware()
 const store = createStore(
@@ -25,7 +26,7 @@ sagaMiddleware.run(rootSaga)
 const app = (
   <Provider store={store}>
     <div>
-      <h1>EH</h1>
+      <NavBar />
       <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
         <ScrollToTop>
           <App />

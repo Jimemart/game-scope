@@ -5,7 +5,7 @@ import { withRouter } from 'react-router-dom'
 class GameNavigator extends Component {
 
   onClick = () => {
-    const { history, id, location } = this.props
+    const { history, id } = this.props
     history.push(`../game/${id}`)
   }
 

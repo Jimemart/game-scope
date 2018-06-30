@@ -27,4 +27,8 @@ export const news = {
   category: (type) => get(`news/${type}`)
 }
 
+export const user = {
+  getUser: (id) => get(`user/${id}`)
+}
+
 export default apiGame

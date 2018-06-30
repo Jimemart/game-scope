@@ -1,0 +1,4 @@
+export const FETCH_USER_INIT = "FETCH_USER_INIT"
+export const FETCH_USER = "FETCH_USER"
+export const FETCHED_USER = "FETCHED_USER"
+export const FETCH_USER_FAILED = "FETCH_USER_FAILED" 
