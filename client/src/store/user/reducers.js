@@ -2,7 +2,7 @@ import * as constants from './constants'
 
 const initialState = {
   user: null,
-  loading: null
+  loading: null,
   err: null
 }
 
@@ -16,16 +16,18 @@ export const reducer = (state = initialState, action) => {
     case constants.FETCHED_USER:
       return {
         ...state,
-        ...action.payload,
+        user: action.payload,
         loading: false
       }
     case constants.FETCH_USER_FAILED:
       return {
         ...state,
-        ...action.payload,
+        user: action.payload,
         loading: false
       }
     default:
-
+      return state
   }
 }
+
+export default reducer

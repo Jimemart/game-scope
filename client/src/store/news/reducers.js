@@ -23,7 +23,6 @@ export const reducer = (state = initialState, action) => {
         }
       }
     case constants.GOT_RELEVANT:
-      console.log(action)
       return {
         ...state,
         relevant: {

@@ -2,6 +2,7 @@ import React from 'react'
 import { FlexContainer, Title, Search, UserNav } from '../'
 
 const NavBar = (props) => {
+  const { user } = props
   return (
   <FlexContainer
     direction="row"
@@ -15,7 +16,7 @@ const NavBar = (props) => {
         <Search />
     </FlexContainer>
     <FlexContainer width="7%" marginTop="0px" align="center">
-      <UserNav />
+      <UserNav user={user}/>
 
     </FlexContainer>
   </FlexContainer>

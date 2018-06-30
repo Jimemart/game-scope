@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const latest = require('../mocks/latest.json')
 const relevant = require('../mocks/relevant.json')
+const users = require('../mocks/user.json')
 const games = require('../mocks/games.json')
 
 router.get('/latest', function(req, res, next) {
@@ -29,6 +30,11 @@ router.get('/related/:gameId', function(req, res, next) {
   const indexRelated = related.findIndex(elem => elem.gameId == req.params.gameId)
   const arr = [news[indexNews], related[indexRelated]]
   res.status(200).send(arr)
+})
+
+router.get('/user/:id', function(req, res, nest) {
+  const user = users.filter(elem => elem.id == req.params.id)
+  res.status(200).send(user[0])
 })
 
 module.exports = router;

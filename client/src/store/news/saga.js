@@ -12,7 +12,7 @@ export function* fetchNews ({str}) {
   }
 }
 
-export function* fetchRelevant ({payload: {gameId}}) {
+export function* fetchRelevant ({ payload: { gameId } }) {
   try {
     yield put(newsActions.getNews())
     const fetchedRelevant = yield call(news.relevant, gameId)
