@@ -5,7 +5,7 @@ const Pill = styled.div`
   color: white;
   border-radius: 50px;
   padding: 10px;
-  margin: auto 20px;
+  margin: auto 3em;
   cursor: pointer;
   &.active {
     background: rgba(147, 147, 147, 0.2);
