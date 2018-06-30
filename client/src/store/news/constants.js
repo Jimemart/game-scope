@@ -1,2 +1,7 @@
 export const GET_NEWS = 'GET_NEWS'
 export const SET_NEWS = 'SET_NEWS'
+
+export const GET_RELEVANT_INIT = 'GET_RELEVANT_INIT'
+export const GET_RELEVANT = 'GET_RELEVANT'
+export const GOT_RELEVANT = 'GOT_RELEVANT'
+export const GET_RELEVANT_FAILED = 'GET_RELEVANT_FAILED'

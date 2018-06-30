@@ -4,7 +4,7 @@ import { Pill, FlexContainer, GameNavigator } from '../'
 
 const Game = styled.div`
   width: 100%;
-  height: 270px;
+  height: 25em;
   background: url(${props => props.img});
   background-size: cover;
 `

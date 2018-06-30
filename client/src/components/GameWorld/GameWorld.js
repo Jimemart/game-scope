@@ -11,8 +11,7 @@ const Flex = styled.div`
 `
 const Holder = styled.div`
   display:flex;
-  width:70%;
-  max-width: 1000px;
+  width:80%;
   flex-direction:column;
   justify-content: center;
 `

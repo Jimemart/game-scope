@@ -14,6 +14,33 @@ export const setNews = (news) => {
   }
 }
 
+export const getRelevantInit = gameId => {
+  return {
+    type: constants.GET_RELEVANT_INIT,
+    payload: {
+      gameId
+    }
+  }
+}
+
+export const getRelevant = () => {
+  return {
+    type: constants.GET_RELEVANT
+  }
+}
+
+export const gotRelevant = relevant => {
+  return {
+    type: constants.GOT_RELEVANT,
+    payload: {
+      relevant
+    }
+  }
+}
+
 export const actions = {
-  getNews
+  getNews,
+  getRelevantInit,
+  getRelevant,
+  gotRelevant
 }
