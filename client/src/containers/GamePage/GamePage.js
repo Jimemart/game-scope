@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { get } from 'lodash'
 import { Game } from '../../components'
 import { connect } from 'react-redux'
 import { singleGame, getArrayFormated } from '../../store/games/selectors'
+import { getRelevantNews } from '../../store/news/selectors'
 import { RingLoader } from 'react-spinners';
 import { actions as games } from '../../store/games/actions'
 import { actions as news } from '../../store/news/actions'
@@ -10,10 +10,9 @@ import { actions as news } from '../../store/news/actions'
 export class GamePageContainer extends Component {
   componentDidMount () {
     const { game, match, onLoadRelevant } = this.props
-    let id = get(game, 'id')
+    let id = match.params.id
     if (!game) {
       this.props.onSelectGame(match.params.id)
-      id = match.params.id
     }
     onLoadRelevant(id)
   }
@@ -38,7 +37,8 @@ export class GamePageContainer extends Component {
 
 const mapStateToProps = state => ({
   game: singleGame(state),
-  file: getArrayFormated(state)
+  file: getArrayFormated(state),
+  relevant: getRelevantNews(state)
 })
 
 const mapDispatchToProps = dispatch => {

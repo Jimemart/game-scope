@@ -4,9 +4,12 @@ import { Pill, FlexContainer, GameNavigator } from '../'
 
 const Game = styled.div`
   width: 100%;
-  height: 25em;
+  height: 20em;
   background: url(${props => props.img});
   background-size: cover;
+  @media (min-width: 1500px) {
+    height: 25em;
+  }
 `
 const Holder = styled.div`
   width:22%;

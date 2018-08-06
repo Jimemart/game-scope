@@ -15,7 +15,7 @@ const NavBar = (props) => {
     <FlexContainer direction="column" align="center" width="20%" justify="center" marginTop="0px">
         <Search />
     </FlexContainer>
-    <FlexContainer width="7%" marginTop="0px" align="center">
+    <FlexContainer width="9%" marginTop="0px" align="center">
       <UserNav user={user}/>
 
     </FlexContainer>

@@ -47,9 +47,9 @@ const Holder = styled.div`
 
 const GameCard = (props) => {
   const { game, file } = props
-  const pills = ['Resumen', 'Images', 'Videos', 'Analisis', 'Second hand']
+  const pills = ['Resumen', 'Videos', 'Analisis', 'Used']
   return (
-    <FlexContainer width="70%" background="rgb(22,22,22)" padding="30px 40px" direction="column" justify="flex-start">
+    <FlexContainer width="60%" background="rgb(22,22,22)" padding="30px 40px" direction="column" justify="flex-start">
       <Title>{game.name}</Title>
       <FlexContainer justify="flex-start" direction="row">
         <List>
@@ -67,7 +67,7 @@ const GameCard = (props) => {
       <FlexContainer direction="row" width="50%">
         <Price out={true}/>
       </FlexContainer>
-      <FlexContainer>
+      <FlexContainer justify="space-around">
         <Menu pills={pills} active="Resumen" marginbottom="10px"/>
       </FlexContainer>
       <FlexContainer justify="row" maxheight="270px">

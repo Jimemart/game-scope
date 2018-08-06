@@ -1,6 +1,4 @@
-import React from 'react'
 import styled from 'styled-components';
-
 
 const Search = styled.input`
  background: rgba(147, 147, 147, 0.2);

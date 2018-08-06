@@ -1,21 +1,16 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Shadow } from '../'
+import { Shadow, GameNavigator } from '../'
 
 const Section = styled.div`
   background: url(${props => props.img});
   background-size: cover;
-  width:20%;
-  height:170px;
-  position:relative;
   margin: 0px;
   background-position: center;
   cursor:pointer;
   color:white;
+  height: 100%;
   box-sizing: border-box;
-  :hover {
-      border-bottom: 2px solid #2b9b41;
-    }
 `
 const Price = styled.div`
   background: #2b9b41;
@@ -37,15 +32,20 @@ const H3 = styled.h3`
 `
 
 const Single = (props) => {
+  console.log(props)
+  const { game : {img, id, name, price} } = props
+
  return(
-   <Section img={props.game.img}>
-     <Shadow/>
-     <Holder>
-       <H3>{props.game.name}</H3>
-       <Price>
-         {props.game.price}
-       </Price>
-     </Holder>
+   <Section img={img}>
+     <GameNavigator id={id}>
+       <Shadow/>
+       <Holder>
+         <H3>{name}</H3>
+         <Price>
+           {price}
+         </Price>
+       </Holder>
+     </GameNavigator>
    </Section>
  )
 }

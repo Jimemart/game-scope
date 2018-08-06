@@ -12,7 +12,7 @@ export const extractPlatforms = (platforms) => {
       case 4:
         return 'PC'
       default:
-
+        return ''
     }
   })
   return translated.join(' ')

@@ -1,11 +1,12 @@
 import React from 'react'
-import { Single, FlexContainer } from '../'
+import { Single, FlexContainer, withBorderBottom } from '../'
 
 const Relevant = (props) => {
   let sections
 
   if(props.relevant) {
-    sections = props.relevant.map((elem, i) => <Single key={i} game={elem}/>)
+    const SingleWithBorder = withBorderBottom(Single)
+    sections = props.relevant.map((elem, i) => <SingleWithBorder key={i} game={elem}/>)
   }
 
   return (

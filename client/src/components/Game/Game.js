@@ -1,8 +1,11 @@
 import React from 'react';
-import { ImageGame, FlexContainer, GameCard, GameWorld } from '../'
+import { ImageGame, FlexContainer, GameCard, GameWorld, DisplayList, News, withBorderBottom } from '../'
+
+
 
 const Game = (props) => {
-  const { game, file } = props
+  const ListOfRelevant = DisplayList(withBorderBottom(News, '47.5%', '270px', '40'))
+  const { game, file, relevant } = props
   return (
     <div>
     <FlexContainer justify="center" marginbottom="50px">
@@ -15,6 +18,11 @@ const Game = (props) => {
         <GameCard
           game={game}
           file={file} />
+      </FlexContainer>
+    </FlexContainer>
+    <FlexContainer justify="center">
+      <FlexContainer justify="space-between" width="80%">
+        <ListOfRelevant items={relevant}/>
       </FlexContainer>
     </FlexContainer>
     <GameWorld />

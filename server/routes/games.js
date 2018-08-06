@@ -23,13 +23,13 @@ router.get('/game/:id', function(req, res, next) {
   res.status(200).send(game[0])
 })
 
-router.get('/related/:gameId', function(req, res, next) {
-  const news = require('../mocks/news')
-  const related = require('../mocks/related')
-  const indexNews = news.findIndex(elem => elem.gameId == req.params.gameId)
-  const indexRelated = related.findIndex(elem => elem.gameId == req.params.gameId)
-  const arr = [news[indexNews], related[indexRelated]]
-  res.status(200).send(arr)
+router.get('/related/:gameId', async function(req, res, next) {
+  const news = await require('../mocks/news')
+  const related = await require('../mocks/related')
+  const indexNews = await news.findIndex(elem => elem.gameId == req.params.gameId)
+  const indexRelated = await related.findIndex(elem => elem.gameId == req.params.gameId)
+  const arr = await [news[indexNews], related[indexRelated]]
+  await res.status(200).send(arr)
 })
 
 router.get('/user/:id', function(req, res, nest) {

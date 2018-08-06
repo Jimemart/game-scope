@@ -25,7 +25,7 @@ const H3 = styled.h3`
 
 const Card = (props) => {
   return (
-    <HorizontalCard width={'47.5%'} marginTop="20px;">
+    <HorizontalCard marginTop="20px;">
         {!props.reverse ? (
         <FlexContainer color="#808080">
           <Relative>

@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import styled from 'styled-components';
 
 import { StateUpdater } from '../'
+import { withBorderBottom } from '../../components'
 import { Menu, TopSales, News, Analisis, Streams, DisplayList } from '../../components'
 import { singleGame } from '../../store/games/selectors'
 import { currentNews } from '../../store/news/selectors'
@@ -41,15 +42,15 @@ class NavigationMenu extends Component {
         ItemsList = DisplayList(TopSales)
         break;
       case 'News':
-        ItemsList = DisplayList(News)
+        ItemsList = DisplayList(withBorderBottom(News, '47.5%', '270px', '40'))
         break;
       case 'Analisis':
-        ItemsList = DisplayList(Analisis)
+        ItemsList = DisplayList(withBorderBottom(Analisis, '47.5%', '100%', '40'))
         title= 'game analisis'
         color= 'blue'
         break;
       case 'Streams':
-        ItemsList = DisplayList(Streams)
+        ItemsList = DisplayList(withBorderBottom(Streams, '47.5%', '100%', '40'))
         title= 'game stream'
         color= '#6242f4'
         break;
