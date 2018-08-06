@@ -13,8 +13,7 @@
   <li>React</li>
   <li>Redux</li>
   <li>Redux-saga</li>
-  <li>TDD</li>
-  <li>Sass</li>
+  <li>Styled Components</li>
   <li>Node</li>
   <li>Express</li>
 </ul>
