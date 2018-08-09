@@ -75,7 +75,7 @@ const GameCard = (props) => {
           <p>{game.resumen}</p>
         </Holder>
         <FlexContainer wrap="wrap" direction="row" padding="10px 10px 0">
-          {map(game.screenshots, (elem, index) => <MaxiSize img={elem} list={game.screenshots}/>)}
+          {map(game.screenshots, (elem, index) => <MaxiSize img={elem} list={game.screenshots} key={`modal-${index}`}/>)}
         </FlexContainer>
       </FlexContainer>
     </FlexContainer>

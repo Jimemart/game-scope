@@ -22,8 +22,8 @@ const UserNav = (props) => {
         </Holder>
         <User>
           <H5>{user.firstName} {user.secondName}</H5>
-          <Icon name={"fas fa-envelope"} text={user.messages} iconColor="yellow"/>
-          <Icon name={"fas fa-user"} text={user.userNumber} iconColor="grey"/>
+          <Icon name={"fas fa-envelope"} text={user.messages} iconcolor="yellow"/>
+          <Icon name={"fas fa-user"} text={user.userNumber} iconcolor="grey"/>
         </User>
       </FlexContainer>) : null
     )

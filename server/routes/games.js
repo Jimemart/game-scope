@@ -15,7 +15,8 @@ router.get('/relevant', function(req, res, next) {
 
 router.get('/news/:id', function(req, res, next) {
   const json = require(`../mocks/${req.params.id}`)
-  res.status(200).send(json)
+  const news = req.params.id == 'news' ? json.slice(0,4) : json
+  res.status(200).send(news)
 })
 
 router.get('/game/:id', function(req, res, next) {
@@ -30,7 +31,6 @@ router.get('/related/:gameId', async function(req, res, next) {
   const indexRelated = await related.findIndex(elem => elem.gameId == req.params.gameId)
   const arr = await [news[indexNews], related[indexRelated]]
   const finalArr = await arr.filter(elem => !!elem )
-  console.log(finalArr)
   await res.status(200).send(finalArr)
 })
 

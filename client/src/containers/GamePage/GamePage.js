@@ -10,7 +10,7 @@ import { actions as news } from '../../store/news/actions'
 
 export class GamePageContainer extends Component {
   componentDidMount () {
-    const { game, match, onLoadRelevant } = this.props
+    const { game, match } = this.props
     let id = match.params.id
     if (!game) {
       this.props.onSelectGame(id)
@@ -18,9 +18,10 @@ export class GamePageContainer extends Component {
   }
 
   componentDidUpdate(newProps) {
-    if(this.props.game.loading) return
-    if(isEqual(this.props.game, newProps.game)) return
-    this.props.onLoadRelevant(this.props.match.params.id)
+    const { game, game: { loading }, match: { params: { id }}} = this.props
+    if(loading) return
+    if(isEqual(game, newProps.game)) return
+    this.props.onLoadRelevant(id)
   }
 
   render() {

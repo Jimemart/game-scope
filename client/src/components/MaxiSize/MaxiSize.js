@@ -48,10 +48,10 @@ export class MaxiSize extends Component {
         <img src={img} alt="modal-screenshot" height="80%" onClick={(e) => this.stopPropagation(e)}/>
         <FlexContainer direction="row" justify="space-between" width="80%" position="absolute">
           <div onClick={(e) => this.onPrev(e)}>
-            <Icon color="white" name="angle-left" fontsize="80px" cursor="pointer" ></Icon>
+            <Icon color="white" name="angle-left" fontSize="80px" cursor="pointer" ></Icon>
           </div>
           <div onClick={(e) => this.onNext(e)}>
-            <Icon color="white" name="angle-right" fontsize="80px" cursor="pointer" ></Icon>
+            <Icon color="white" name="angle-right" fontSize="80px" cursor="pointer" ></Icon>
           </div>
         </FlexContainer>
       </FlexContainer>
