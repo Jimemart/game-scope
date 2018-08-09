@@ -1,7 +1,7 @@
 import React from 'react'
 import { map } from 'lodash'
 import styled from 'styled-components';
-import { FlexContainer, Rating, Price, Menu } from '../'
+import { MaxiSize, FlexContainer, Rating, Price, Menu } from '../'
 
 const Title = styled.h2`
   color: white;
@@ -75,9 +75,7 @@ const GameCard = (props) => {
           <p>{game.resumen}</p>
         </Holder>
         <FlexContainer wrap="wrap" direction="row" padding="10px 10px 0">
-          {map(game.screenshots, (elem, index) => (
-            <img src={elem} width="48%" alt="screenshot" key={index} height="45%"/>
-          ))}
+          {map(game.screenshots, (elem, index) => <MaxiSize img={elem} list={game.screenshots}/>)}
         </FlexContainer>
       </FlexContainer>
     </FlexContainer>

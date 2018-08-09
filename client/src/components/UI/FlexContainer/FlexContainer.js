@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const FlexContainer = styled.div`
   display: flex;
-  position: relative;
+  position:${props => props.position ? props.position: 'relative'};
   padding: ${props => props.padding ? props.padding: 'auto'};
   flex-direction: ${props => props.direction ? props.direction : 'row'};
   justify-content: ${props => props.justify ? props.justify : 'space-between'};
