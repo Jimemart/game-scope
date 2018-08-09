@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Game } from '../../components'
+import { isEqual } from 'lodash'
 import { connect } from 'react-redux'
 import { singleGame, getArrayFormated } from '../../store/games/selectors'
 import { getRelevantNews } from '../../store/news/selectors'
@@ -12,9 +13,14 @@ export class GamePageContainer extends Component {
     const { game, match, onLoadRelevant } = this.props
     let id = match.params.id
     if (!game) {
-      this.props.onSelectGame(match.params.id)
+      this.props.onSelectGame(id)
     }
-    onLoadRelevant(id)
+  }
+
+  componentDidUpdate(newProps) {
+    if(this.props.game.loading) return
+    if(isEqual(this.props.game, newProps.game)) return
+    this.props.onLoadRelevant(this.props.match.params.id)
   }
 
   render() {

@@ -29,7 +29,9 @@ router.get('/related/:gameId', async function(req, res, next) {
   const indexNews = await news.findIndex(elem => elem.gameId == req.params.gameId)
   const indexRelated = await related.findIndex(elem => elem.gameId == req.params.gameId)
   const arr = await [news[indexNews], related[indexRelated]]
-  await res.status(200).send(arr)
+  const finalArr = await arr.filter(elem => !!elem )
+  console.log(finalArr)
+  await res.status(200).send(finalArr)
 })
 
 router.get('/user/:id', function(req, res, nest) {
