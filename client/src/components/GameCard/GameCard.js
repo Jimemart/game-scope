@@ -8,6 +8,7 @@ const Title = styled.h2`
   text-transform: uppercase;
   font-weight: bold;
   font-size:30px;
+  margin-bottom: 0px;
 `
 
 const List = styled.div`

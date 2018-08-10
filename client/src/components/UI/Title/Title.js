@@ -2,6 +2,7 @@ import React from 'react'
 import styled, { css } from 'styled-components';
 
 const StyledTitle = styled.div`
+  cursor: ${props => props.cursor ? 'pointer' : 'auto'};
   width: 50px;
   text-transform: uppercase;
   color:white;
@@ -42,12 +43,12 @@ const StyledTitle = styled.div`
 `
 
 const Title = (props) => {
-  const { centered, big, title, right, color} = props
+  const { centered, big, title, right, color, cursor} = props
   const arr = title.split(' ')
   const firstLetter = arr[1].substring(0,1)
   const rest = arr[1].substring(1, arr[1].length)
   return(
-    <StyledTitle big={big} centered={centered} right={right} color={color}>
+    <StyledTitle big={big} centered={centered} right={right} color={color} cursor={cursor}>
       <h1>{arr[0]}<br/><span>{firstLetter}</span><span>{rest}</span></h1>
     </StyledTitle>
   )

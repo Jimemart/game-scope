@@ -32,7 +32,6 @@ const H3 = styled.h3`
 `
 
 const Single = (props) => {
-  console.log(props)
   const { game : {img, id, name, price} } = props
 
  return(
